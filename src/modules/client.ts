@@ -19,6 +19,7 @@ import { InitialResourcesModule } from '@vue-storefront/core/modules/initial-res
 
 // import { DeviceModule } from './device/index';
 import { registerModule } from '@vue-storefront/core/lib/modules'
+import { BjoernsTestModule } from './bjoerns-test-module'
 
 // TODO:distributed across proper pages BEFORE 1.11
 export function registerClientModules () {
@@ -40,6 +41,8 @@ export function registerClientModules () {
   registerModule(NewsletterModule)
   registerModule(InitialResourcesModule)
   // registerModule(DeviceModule)
+  // Registration von Björn's Custom Module! :-)
+  registerModule(BjoernsTestModule)
 }
 
 // Deprecated API, will be removed in 2.0
